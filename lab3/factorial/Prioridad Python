@@ -1,0 +1,58 @@
+# Prioridad 10 
+time nice -n 10 python3 factorial.py 17000
+
+# Prioridad 5 
+time nice -n 5 python3 factorial.py 17000
+
+# Prioridad 0 
+time python3 factorial.py 17000
+
+# Prioridad -5 
+sudo time nice -n -5 python3 factorial.py 17000
+
+# Prioridad -10 
+sudo time nice -n -10 python3 factorial.py 17000
+
+output:
+
+Calculando el factorial de 17000...
+
+Cálculo completado.
+El programa en Python tardó: 0.045477 segundos.
+
+real	0m0,056s
+user	0m0,048s
+sys	0m0,008s
+
+Calculando el factorial de 17000...
+
+Cálculo completado.
+El programa en Python tardó: 0.049188 segundos.
+
+real	0m0,061s
+user	0m0,051s
+sys	0m0,010s
+
+Calculando el factorial de 17000...
+
+Cálculo completado.
+El programa en Python tardó: 0.045445 segundos.
+
+real	0m0,055s
+user	0m0,043s
+sys	0m0,012s
+
+Calculando el factorial de 17000...
+
+Cálculo completado.
+El programa en Python tardó: 0.046679 segundos.
+0.04user 0.01system 0:00.05elapsed 98%CPU (0avgtext+0avgdata 23808maxresident)k
+0inputs+0outputs (0major+4756minor)pagefaults 0swaps
+
+Calculando el factorial de 17000...
+
+Cálculo completado.
+El programa en Python tardó: 0.045587 segundos.
+0.04user 0.01system 0:00.05elapsed 100%CPU (0avgtext+0avgdata 23808maxresident)k
+0inputs+0outputs (0major+4754minor)pagefaults 0swaps
+

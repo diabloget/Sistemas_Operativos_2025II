@@ -1,0 +1,24 @@
+time ./contador_multi quijote.txt de 2
+time ./contador_multi quijote.txt de 3
+time ./contador_multi quijote.txt de 4
+time ./contador_multi quijote.txt de 5
+La palabra 'de' aparece 18144 veces.
+
+real	0m0,008s
+user	0m0,007s
+sys	0m0,005s
+La palabra 'de' aparece 18144 veces.
+
+real	0m0,006s
+user	0m0,009s
+sys	0m0,003s
+La palabra 'de' aparece 18144 veces.
+
+real	0m0,006s
+user	0m0,007s
+sys	0m0,005s
+La palabra 'de' aparece 18144 veces.
+
+real	0m0,005s
+user	0m0,008s
+sys	0m0,003s

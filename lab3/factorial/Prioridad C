@@ -1,0 +1,58 @@
+# Prioridad -10
+sudo time nice -n -10 ./factorial_c 17000
+
+# Prioridad -5 
+sudo time nice -n -5 ./factorial_c 17000
+
+# Prioridad 0 
+time ./factorial_c 17000
+
+# Prioridad 5
+time nice -n 5 ./factorial_c 17000
+
+# Prioridad 10
+time nice -n 10 ./factorial_c 17000
+
+
+Output:
+
+Calculando el factorial de 17000...
+
+El cálculo ha terminado.
+Resultado (simbólico): inf
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 2304maxresident)k
+0inputs+0outputs (0major+342minor)pagefaults 0swaps
+
+Calculando el factorial de 17000...
+
+El cálculo ha terminado.
+Resultado (simbólico): inf
+0.00user 0.00system 0:00.00elapsed 100%CPU (0avgtext+0avgdata 2304maxresident)k
+0inputs+0outputs (0major+343minor)pagefaults 0swaps
+
+Calculando el factorial de 17000...
+
+El cálculo ha terminado.
+Resultado (simbólico): inf
+
+real	0m0,001s
+user	0m0,000s
+sys	0m0,001s
+
+Calculando el factorial de 17000...
+
+El cálculo ha terminado.
+Resultado (simbólico): inf
+
+real	0m0,002s
+user	0m0,000s
+sys	0m0,002s
+
+Calculando el factorial de 17000...
+
+El cálculo ha terminado.
+Resultado (simbólico): inf
+
+real	0m0,002s
+user	0m0,000s
+sys	0m0,002s
